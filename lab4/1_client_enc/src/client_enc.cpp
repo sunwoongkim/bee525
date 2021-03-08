@@ -83,7 +83,7 @@ int main(void) {
     if (i < 28*28) { // use 28x28 slots out of 4K slots
       norm_pxl = (double)plaintext_buf[i] / 255; 
     }
-    input0.push_back(norm_pxl); // put 28x28 pixels into th input0 vector
+    input0.push_back(norm_pxl); // put 28x28 pixels into the input0 vector
   }
   Plaintext p0;
   encoder_client1.encode(input0, scale, p0); // encoding
